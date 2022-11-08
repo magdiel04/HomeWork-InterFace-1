@@ -48,6 +48,14 @@ class ViewController: UIViewController {
     result = Int(textField.text!)! / Int(textField2.text!)!
     resultLabel.text = String(result)
     }
+    @IBAction func switchButton(_ sender: UISwitch) {
+        if #available(iOS 15.0, *){
+            if
+                self.traitCollection.userInterfaceStyle == .dark{
+            
+            }
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
